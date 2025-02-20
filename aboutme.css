@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+body {
+    font-family: "Varela Round", serif;
+    background-image: url('https://i.pinimg.com/736x/e7/a1/24/e7a124a5078b73381f7522b0a45212cd.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: rgb(0, 0, 0); 
+}
+
+
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+}
+
+h2 {
+    color: #222831;
+    margin-bottom: 5px; 
+}
+
+p {
+    color: #000000;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.personal-info, .Other-info {
+    text-align: left;
+    display: inline-block;
+    margin-top: 10px; 
+}
+
+.personal-info h3, .Other-info h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+ul {
+    list-style-type: none; 
+    padding: 0;
+    text-align: left;
+    display: inline-block;
+    margin-top: 0; 
+    margin-bottom: 20px;
+}
+
+ul li {
+    font-size: 15px;
+    color: #222831;
+    margin: 5px 0; 
+    padding-left: 25px;
+    position: relative;
+}
+
+ul li::before {
+    content: "•";  
+    color: #464646; 
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.btn {
+    display: block;  
+    background: #848484;
+    color: white;
+    padding: 10px 18px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s ease;
+    margin: 15px auto 0;  
+    width: fit-content;  
+    text-align: center;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
