@@ -2,7 +2,7 @@
 
 body {
     font-family: "Varela Round", serif;
-    background-image: url('https://i.pinimg.com/736x/e7/a1/24/e7a124a5078b73381f7522b0a45212cd.jpg'); 
+    background-image: url('https://i.pinimg.com/originals/63/4e/69/634e69d626a982c793cb6e2da0ee20e5.gif'); 
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -16,6 +16,17 @@ body {
 }
 
 
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .container {
     background: rgba(255, 255, 255, 0.9);
     padding: 20px;
@@ -23,11 +34,23 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     max-width: 400px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.container:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 h2 {
     color: #222831;
     margin-bottom: 5px; 
+    transition: text-shadow 0.3s ease;
+}
+
+h2:hover {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 p {
@@ -63,6 +86,11 @@ ul li {
     margin: 5px 0; 
     padding-left: 25px;
     position: relative;
+    transition: color 0.3s ease;
+}
+
+ul li:hover {
+    color: #0056b3;
 }
 
 ul li::before {
@@ -83,7 +111,7 @@ ul li::before {
     border-radius: 6px;
     font-size: 14px;
     font-weight: bold;
-    transition: 0.3s ease;
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
     margin: 15px auto 0;  
     width: fit-content;  
     text-align: center;
@@ -91,4 +119,6 @@ ul li::before {
 
 .btn:hover {
     background: #0056b3;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
