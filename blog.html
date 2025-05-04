@@ -4,27 +4,33 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact Me</title>
-  <link rel="stylesheet" href="blog.css"/>
-</head>
-<body>
-  <div class="container">
-    <div class="contact-box">
-      <h2>Contact Me</h2>
-      <p>Feel free to reach out to me through my social media profiles below:</p>
 
-      <div class="social-links">
-        <div class="social-item">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png" alt="LinkedIn Logo" class="social-icon">
-          <a href="https://www.linkedin.com/in/sam-go-25b0bb352/" target="_blank">LinkedIn</a>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+
+  <link rel="stylesheet" href="blog.css" />
+</head>
+<body class="h-screen m-0 flex items-center justify-center font-sans">
+
+  <div class="max-w-[350px] flex gap-10">
+    <div class="text-center bg-white p-8 rounded-xl shadow-lg">
+      <h2 class="text-2xl font-bold mb-2">Contact Me</h2>
+      <p class="text-gray-700">Feel free to reach out to me through my social media profiles below:</p>
+
+      <div class="flex flex-col items-center gap-3 mt-5">
+        <div class="flex items-center gap-3">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png" alt="LinkedIn Logo" class="w-6 h-6">
+          <a href="https://www.linkedin.com/in/sam-go-25b0bb352/" target="_blank" class="text-blue-600 font-semibold hover:text-blue-800">LinkedIn</a>
         </div>
-        <div class="social-item">
-          <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub Logo" class="social-icon">
-          <a href="https://github.com/sdca-sam-richmond-go" target="_blank">GitHub</a>
+        <div class="flex items-center gap-3">
+          <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub Logo" class="w-6 h-6">
+          <a href="https://github.com/sdca-sam-richmond-go" target="_blank" class="text-blue-600 font-semibold hover:text-blue-800">GitHub</a>
         </div>
       </div>
 
-      <a href="index.html" class="back-btn">Back to Home</a>
+      <a href="index.html" class="inline-block mt-6 bg-blue-600 hover:bg-blue-800 text-white px-4 py-2 rounded-md text-sm">Back to Home</a>
     </div>
   </div>
+
 </body>
 </html>

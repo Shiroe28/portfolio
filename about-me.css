@@ -15,7 +15,6 @@ body {
     color: rgb(0, 0, 0); 
 }
 
-
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -59,13 +58,13 @@ p {
     margin-bottom: 10px;
 }
 
-.personal-info, .Other-info {
+.personal-info {
     text-align: left;
     display: inline-block;
     margin-top: 10px; 
 }
 
-.personal-info h3, .Other-info h3 {
+.personal-info h3 {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 5px;

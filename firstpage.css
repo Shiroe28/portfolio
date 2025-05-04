@@ -1,19 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
 
 body {
-    font-family: 'Lilita One', cursive;
-    background-image: url('firstpage.gif');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    color: white; 
+  font-family: 'Lilita One', cursive;
+  background-image: url('firstpage.gif');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin: 0;
 }
+
 
 .container {
     background: rgba(255, 255, 255, 0.8);
