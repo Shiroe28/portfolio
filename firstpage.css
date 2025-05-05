@@ -1,125 +1,102 @@
-@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
-
 body {
-  font-family: 'Lilita One', cursive;
-  background-image: url('firstpage.gif');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  margin: 0;
-}
-
-
-.container {
-    background: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Lilita One', cursive;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  /* Vanta background styling */
+  #vanta-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  /* Card */
+  .card {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 16px;
+    max-width: 360px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
     text-align: center;
-    max-width: 325px;
-}
-
-.profile-pic {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%; 
-    object-fit: cover; 
-    border: 3px solid white; 
-}
-
-h2 {
-    margin: 10px 0;
+    z-index: 1;
+  }
+  
+  /* Avatar */
+  .avatar {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .avatar:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Name */
+  .name {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
     color: #222831;
-    font-family: 'Lilita One', cursive; 
-}
-
-p {
-    color: #222831;
+  }
+  
+  /* Tagline */
+  .tagline {
     font-size: 14px;
-}
-
-.buttons {
-    margin-top: 15px;
-}
-
-.btn {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Buttons */
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .btn {
     text-decoration: none;
-    display: inline-block;
-    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 12px;
     border-radius: 30px;
-    font-size: 14px;
-    font-weight: bold;
-    transition: 0.3s ease-in-out;
-    margin: 5px;
     text-align: center;
-    cursor: pointer;
-    color: white;
-    border: none; 
-    outline: none; 
-}
-
-.btn-primary {
-    background: linear-gradient(45deg, #007BFF, #0056b3);
-    color: #333333;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.btn-primary:hover {
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
-}
-
-.btn-secondary {
-    background: linear-gradient(45deg, #6c757d, #495057);
-    color: #333333;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.btn-secondary:hover {
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
-}
-
-.btn-tertiary {
-    background: linear-gradient(45deg, #FF5733, #FF8D1A);
-    color: #333333;
-    padding: 12px 18px;
-    border-radius: 50px;
-    font-size: 14px;
-    font-weight: bold;
-    transition: 0.3s ease-in-out;
-    margin: 5px;
-    text-decoration: none;
-    display: inline-block;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.btn-tertiary:hover {
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
-}
-
-@media (max-width: 480px) {
-    body {
-        padding: 20px;
-        height: auto;
-        align-items: flex-start;
-    }
-
-    .container {
-        max-width: 100%;
-        width: 100%;
-        padding: 15px;
-        box-sizing: border-box;
-    }
-
-    .personal-info,
-    ul {
-        width: 100%;
-        text-align: left;
-    }
-
-    .btn {
-        width: 100%;
-        padding: 12px;
-        margin-top: 20px;
-    }
-}
+    transition: all 0.3s ease;
+  }
+  
+  .btn-primary {
+    background: linear-gradient(to right, #007bff, #0056b3);
+    color: #fff;
+  }
+  
+  .btn-primary:hover {
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.8);
+  }
+  
+  .btn-secondary {
+    background: linear-gradient(to right, #6c757d, #495057);
+    color: #fff;
+  }
+  
+  .btn-secondary:hover {
+    box-shadow: 0 0 10px rgba(108, 117, 125, 0.8);
+  }
+  
+  .btn-tertiary {
+    background: linear-gradient(to right, #ff5733, #ff8d1a);
+    color: #fff;
+  }
+  
+  .btn-tertiary:hover {
+    box-shadow: 0 0 10px rgba(255, 87, 51, 0.8);
+  }
+  

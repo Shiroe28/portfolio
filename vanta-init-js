@@ -1,0 +1,12 @@
+VANTA.CLOUDS({
+  el: "#vanta-bg",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  backgroundColor: 0x1a1a1a,
+  skyColor: 0x0,
+  sunGlareColor: 0xff9900,
+  speed: 0.5
+});
