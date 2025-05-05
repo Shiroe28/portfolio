@@ -13,7 +13,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px; /* fallback padding for small screens */
+  padding: 20px; 
   box-sizing: border-box;
 }
 
@@ -24,7 +24,7 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   max-width: 325px;
-  width: 100%; /* make it responsive */
+  width: 100%; 
 }
 
 .profile-pic {
