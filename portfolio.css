@@ -2,7 +2,6 @@
 
 body {
   font-family: "Varela Round", sans-serif;
-  background-image: url("techstack.gif");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -109,4 +108,3 @@ body {
     text-align: center;
   }
 }
-    
