@@ -96,3 +96,30 @@ p {
 .btn-tertiary:hover {
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
+
+@media (max-width: 480px) {
+    body {
+        padding: 20px;
+        height: auto;
+        align-items: flex-start;
+    }
+
+    .container {
+        max-width: 100%;
+        width: 100%;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    .personal-info,
+    ul {
+        width: 100%;
+        text-align: left;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 12px;
+        margin-top: 20px;
+    }
+}

@@ -121,3 +121,32 @@ ul li::before {
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
+
+
+@media (max-width: 480px) {
+    body {
+        flex-direction: column;
+        padding: 20px;
+        height: auto;
+        align-items: flex-start;
+    }
+
+    .container {
+        max-width: 100%;
+        width: 100%;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    .personal-info,
+    ul {
+        width: 100%;
+        text-align: left;
+    }
+
+   
+    .btn {
+        padding: 12px;
+        margin-top: 20px;
+    }
+}
