@@ -41,10 +41,7 @@ body {
     box-sizing: border-box;
 }
 
-.container:hover {
-    transform: scale(1.03);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
+
 
 h2 {
     color: #222831;
@@ -106,7 +103,7 @@ ul li::before {
 }
 
 .btn {
-    display: block;
+    display: inline-block;
     background: #848484;
     color: white;
     padding: 10px 20px;
@@ -116,12 +113,9 @@ ul li::before {
     font-weight: bold;
     transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
     margin-top: 20px;
-    width: 100%;
-    text-align: center;
-    box-sizing: border-box;
 }
 
-.btn:hover {
+.btn:hover {    
     background: #0056b3;
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
@@ -153,6 +147,5 @@ ul li::before {
         width: 100%;
         padding: 12px;
         font-size: 15px;
-        margin-top: 20px;
     }
 }
