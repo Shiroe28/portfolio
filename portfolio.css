@@ -21,22 +21,23 @@ body {
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 600px;
+  max-width: 100%;
   width: 100%;
-  box-sizing: border-box;
+  max-width: 600px;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 15px;
   margin: 20px 0;
 }
 
 .image-box {
   width: 100%;
-  height: 150px;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,7 +47,7 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
   background: #fff;
-  padding-bottom: 10px;
+  padding: 10px;
 }
 
 .image-box img {
@@ -87,22 +88,20 @@ body {
 
 
 @media (max-width: 768px) {
-  .portfolio-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .container {
+    padding: 15px;
   }
 }
 
 @media (max-width: 480px) {
   body {
     padding: 10px;
+    flex-direction: column;
   }
 
   .container {
     padding: 15px;
-  }
-
-  .portfolio-grid {
-    grid-template-columns: 1fr;
+    border-radius: 10px;
   }
 
   .btn {
