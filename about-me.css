@@ -106,7 +106,7 @@ ul li::before {
 }
 
 .btn {
-    display: inline-block;
+    display: block;
     background: #848484;
     color: white;
     padding: 10px 20px;
@@ -116,6 +116,9 @@ ul li::before {
     font-weight: bold;
     transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
     margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
 }
 
 .btn:hover {
@@ -150,5 +153,6 @@ ul li::before {
         width: 100%;
         padding: 12px;
         font-size: 15px;
+        margin-top: 20px;
     }
 }
