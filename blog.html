@@ -3,16 +3,36 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<<<<<<< HEAD
   <title>Sam Richmond Go | Contact Me</title>
+=======
+  <title>Sam Richmond Go | blog </title>
+>>>>>>> e83a3edd2d4f72f2f5fa3a42fa86a93fffffa6f1
 
   <script src="https://cdn.tailwindcss.com"></script>
-
-
   <link rel="stylesheet" href="blog.css" />
-</head>
-<body class="h-screen m-0 flex items-center justify-center font-sans">
 
-  <div class="max-w-[350px] flex gap-10">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
+
+  <style>
+    #vanta-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body class="h-screen m-0 flex items-center justify-center font-sans relative">
+
+  
+  <div id="vanta-bg"></div>
+
+  <div class="max-w-[350px] flex gap-10 z-10">
     <div class="text-center bg-white p-8 rounded-xl shadow-lg">
       <h2 class="text-2xl font-bold mb-2">Contact Me</h2>
       <p class="text-gray-700">Feel free to reach out to me through my social media profiles below:</p>
@@ -31,6 +51,22 @@
       <a href="index.html" class="inline-block mt-6 bg-blue-600 hover:bg-blue-800 text-white px-4 py-2 rounded-md text-sm">Back to Home</a>
     </div>
   </div>
+
+ 
+  <script>
+    VANTA.FOG({
+      el: "#vanta-bg",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      highlightColor: 0x0,
+      midtoneColor: 0x0,
+      lowlightColor: 0x0,
+      baseColor: 0xffffff
+    });
+  </script>
 
 </body>
 </html>
