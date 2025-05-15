@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
 body {
   font-family: 'Lilita One', cursive;
   background-size: cover;
@@ -16,17 +18,20 @@ body {
 
 .container {
   background: rgba(255, 255, 255, 0.8);
-  padding: 16px;
+  padding: 20px;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  max-width: 280px;
-  width: 100%; 
+  margin: auto;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 90vw;   /* Responsive on small screens */
 }
 
 .profile-pic {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid white;
@@ -35,31 +40,27 @@ body {
 h2 {
   margin: 10px 0;
   color: #222831;
-  font-size: 18px;
+  font-family: 'Lilita One', cursive;
 }
 
 p {
   color: #222831;
-  font-size: 13px;
-  margin: 0 0 10px 0;
+  font-size: 14px;
 }
 
 .buttons {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .btn {
   text-decoration: none;
   display: inline-block;
-  padding: 10px 16px;
-  border-radius: 25px;
-  font-size: 13px;
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-size: 14px;
   font-weight: bold;
   transition: 0.3s ease-in-out;
+  margin: 5px;
   text-align: center;
   cursor: pointer;
   color: white;
@@ -73,33 +74,47 @@ p {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.btn-primary:hover {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
 .btn-secondary {
   background: linear-gradient(45deg, #6c757d, #495057);
   color: #333333;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.btn-tertiary {
-  background: linear-gradient(45deg, #FF5733, #FF8D1A);
-  color: #333333;
-  padding: 10px 16px;
-  font-size: 13px;
-  border-radius: 25px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.btn:hover {
+.btn-secondary:hover {
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
 
-@media (max-width: 400px) {
+.btn-tertiary {
+  background: linear-gradient(45deg, #FF5733, #FF8D1A);
+  color: #333333;
+  padding: 12px 18px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+  margin: 5px;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-tertiary:hover {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+
+@media (max-width: 450px) {
   .profile-pic {
-    width: 120px;
-    height: 120px;
+    width: 200px;
+    height: 150px;
   }
 
   .btn {
-    font-size: 12px;
-    padding: 8px 14px;
+    padding: 10px 16px;
+    font-size: 13px;
   }
 }

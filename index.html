@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
   
   <title>Sam Richmond Go | Home Page</title>
   <script src="https://cdn.tailwindcss.com"></script>
@@ -13,20 +12,26 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
+
   <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: 'Lilita One', cursive;
+    }
+
     #vanta-bg {
-      position: absolute;
+      position: fixed;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      z-index: -1; 
+      z-index: -1;
     }
 
-
-    .profile-pic,
-    .btn {
-      transition: transform 0.3s ease, opacity 0.5s ease;
+    .container {
+      position: relative;
+      z-index: 1;
     }
 
     .profile-pic,
@@ -50,7 +55,6 @@
   </div>
 
   <script>
-    
     VANTA.FOG({
       el: "#vanta-bg", 
       mouseControls: true,
@@ -64,7 +68,7 @@
       baseColor: 0xffffff
     });
   </script>
-  
+
   <script src="firstpage.js"></script>
 </body>
 </html>
