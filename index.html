@@ -7,7 +7,7 @@
   <title>Sam Richmond Go | Home Page</title>
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Varela+Round&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="firstpage.css"/>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
@@ -43,16 +43,28 @@
 <body>
   <div id="vanta-bg"></div>
 
-  <div class="container">
-    <img class="profile-pic" src="sam.jpg" width="200" height="200" alt="Profile Image"/>
-    <h2>Sam Richmond Go</h2>
-    <p>Designing with purpose, coding with precision, and creating with passion.</p>
-    <div class="buttons">
-      <a href="about-me.html" class="btn btn-primary">About Me</a>
-      <a href="tech-stack.html" class="btn btn-secondary">Tech Stack</a>
-      <a href="blog.html" class="btn btn-tertiary">Contact</a>
+  
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" style="text-decoration: none; color: inherit;">SRG</a>
+      <div class="nav-links">
+        <a href="about-me.html" class="nav-link">About Me</a>
+        <a href="tech-stack.html" class="nav-link">Tech Stack</a>
+        <a href="certificates.html" class="nav-link">Certificates</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="blog.html" class="nav-link">Contact</a>
+      </div>
     </div>
-  </div>
+  </nav>
+
+  
+  <main class="main-content">
+    <div class="hero-section">
+      <img class="profile-pic" src="sam.jpg" alt="Profile Image"/>
+      <h1 class="hero-title">Sam Richmond Go</h1>
+      <p class="hero-description">Designing with purpose, coding with precision, and creating with passion.</p>
+    </div>
+  </main>
 
   <script>
     VANTA.FOG({
